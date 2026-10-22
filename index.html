@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Zen Rock Garden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="frame">
+        <canvas id="game" width="320" height="240"></canvas>
+
+        <div class="hud" id="hud">
+            <div class="hud-item"><span>score</span><strong id="score">0</strong></div>
+            <div class="hud-item"><span>combo</span><strong id="score">0</strong></div>
+            <div class="hud-item"><span>stones</span><strong id="score">10</strong></div>
+            <div class="hud-item"><span>time</span><strong id="score">60</strong></div>
+        </div>
+
+        <div class="overlay" id="startScreen">
+            <h1>Zen Rock Garden</h1>
+            <p>Place stones on the sand to catch falling sakura petals</p>
+            <p class="small">click the sand to place a stone</p>
+            <button id="startBtn">begin</button>
+        </div>
+
+        <div class="overlay hidden" id="gameOver">
+            <span class="label">harmony</span>
+            <h1 id="finalScore">0</h1>
+            <p id="rank">novice</p>
+            <button id="restartBtn">again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
